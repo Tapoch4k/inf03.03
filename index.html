@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poziomy rzek</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <div class="banner1">
+              <img src="obraz1.png" alt="Mapa Polski">
+            </div>
+            <div class="banner2">
+              <h1>Rzeki w województwie dolnośląskim</h1>
+            </div>
+        </div>    
+    </header>
+
+    <nav>
+        <form method="post" action="poziomRzek.php">
+            <label class="radio-label">
+                <input type="radio" name="stan" value="wszystkie"> Wszystkie
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="stan" value="ostrzegawczy"> Ponad stan ostrzegawczy
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="stan" value="alarmowy"> Ponad stan alarmowy
+            </label>
+            <button type="submit">Pokaż</button>
+        </form>
+    </nav>
+
+    <main>
+        <section class="left">
+            <h3>Stany na dzień 2022-05-05</h3>
+            <table>
+                <tr>
+                    <th>Wodomierz</th>
+                    <th>Rzeka</th>
+                    <th>Ostrzegawczy</th>
+                    <th>Alarmowy</th>
+                    <th>Aktualny</th>
+                </tr>
+                <tr>
+                    <td>Lubań</td>
+                    <td>Kwisa</td>
+                    <td>230</td>
+                    <td>290</td>
+                    <td>220</td>
+                </tr>
+                <tr>
+                    <td>Trzebnica</td>
+                    <td>Odra</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>480</td>
+                </tr>
+                <!-- Kolejne wiersze generowane dynamicznie -->
+            </table>
+        </section>
+
+        <section class="right">
+            <h3>Informacje</h3>
+            <ul>
+                <li>Brak ostrzeżeń o burzach z gradem</li>
+                <li>Smog w mieście Wrocław</li>
+                <li>Silny wiatr w Karkonoszach</li>
+            </ul>
+            <h3>Średnie stany wód</h3>
+            <p>2022-05-05: 167,854m³</p>
+            <p>2023-06-06: 175,982m³</p>
+            <a href="https://komunikaty.pl">Dowiedz się więcej</a>
+            <img src="obraz2.jpg" alt="rzeka">
+        </section>
+    </main>
+
+    <footer>
+        <p>Stronę wykonał: 00000000000</p>
+    </footer>
+</body>
+</html>
